@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "681379691769",
+    "project_id": "disi-project-android",
+    "storage_bucket": "disi-project-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681379691769:android:5edda724b623657ccc7628",
+        "android_client_info": {
+          "package_name": "disiiy.khaper.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681379691769-73j56pi3eurdtjnja7vb9v0r733nu29n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "disiiy.khaper.newsapp",
+            "certificate_hash": "4a18b890b65b260483271c421c05f9f3c8a518d8"
+          }
+        },
+        {
+          "client_id": "681379691769-uu10h747qc0mhqmpiucva2ngcgajlc03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPuE4UHWAuPO8vaahi5tERtlpbS70-2JQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681379691769-uu10h747qc0mhqmpiucva2ngcgajlc03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

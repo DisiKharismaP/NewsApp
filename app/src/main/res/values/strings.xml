@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="image_view">Image View</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_login_ins">Please Sign in to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="txt_forgot">Forgot Password?</string>
+    <string name="txt_qa_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="txt_sub_title_forgot">Please fill the input below here</string>
+    <string name="txt_title_forgot">Forgot Password</string>
+    <string name="create_acc">Create Account</string>
+    <string name="title_sub_signup">Please fill the input below here</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="btn_signup">S I G N U P</string>
+    <string name="btn_sign_in">S I G N I N</string>
+    <string name="sign_in">Sign In</string>
+    <string name="qa_signup">Already have an account?</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="txt_date">9, Feb 2021</string>
+    <string name="txt_error">Not empty</string>
+    <string name="txt_error_password">Password Mismatch</string>
+    <string name="txt_user">User</string>
+    <string name="txt_error_register">Register Failed</string>
+</resources>
