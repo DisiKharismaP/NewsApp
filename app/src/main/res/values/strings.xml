@@ -26,4 +26,13 @@
     <string name="txt_error_password">Password Mismatch</string>
     <string name="txt_user">User</string>
     <string name="txt_error_register">Register Failed</string>
+    <string name="breaking_news">Breaking News</string>
+    <string name="highlight_text">Contact Lost With Sriwijaya Air Boeing 737-500 After Take Off</string>
+    <string name="nathania_slavina">Nathania Slavina</string>
+    <string name="all">All</string>
+    <string name="international">International</string>
+    <string name="media">media</string>
+    <string name="magazine">Magazine</string>
+    <string name="business">Business</string>
+    <string name="title_items">An illionois town fights to save its power plant</string>
 </resources>
