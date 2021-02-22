@@ -17,7 +17,7 @@
             android:layout_height="@dimen/_50dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/photoprofile"
+            android:src="@drawable/profile_pict"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +90,7 @@
                     app:cardCornerRadius="20dp">
 
                     <ImageView
+                        android:id="@+id/iv_main_banner"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:background="@color/white"

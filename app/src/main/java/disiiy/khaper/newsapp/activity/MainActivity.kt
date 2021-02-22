@@ -9,11 +9,16 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.*
 import disiiy.khaper.newsapp.NewsAdapter
 import disiiy.khaper.newsapp.R
 import disiiy.khaper.newsapp.model.ResponseNews
 import disiiy.khaper.newsapp.service.RetrofitConfig
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_profile.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,6 +29,9 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+    var refUsers : DatabaseReference? = null
+    var firebaseUser : FirebaseUser? = null
+
     val date = getCurrentDateTime()
 
     fun getCurrentDateTime(): Date {
@@ -48,7 +56,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         tv_date_main.text = date.toString("dd/mm/yyyy")
         getNews()
 
+
+        firebaseUser = FirebaseAuth.getInstance().currentUser
+        refUsers = FirebaseDatabase.getInstance().getReference("User").child(firebaseUser!!.uid)
+        refUsers!!.addValueEventListener(object : ValueEventListener {
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                for (p0 in snapshot.children){
+                    val photo = snapshot.child("photo").value.toString()
+
+                    Glide.with(this@MainActivity).load(photo).into(iv_profile_main)
+                }
+            }
+        })
     }
+
 
     private fun getNews() {
         val country = "id"
@@ -76,6 +101,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                             val newsadapter = NewsAdapter(this@MainActivity, newsData)
                             rv_main.adapter = newsadapter
                             rv_main.layoutManager = LinearLayoutManager(this@MainActivity)
+
+                            val dataHilight = response.body()
+                            Glide.with(this@MainActivity)
+                                .load(dataHilight?.articles?.component1()?.urlToImage)
+                                .centerCrop().into(iv_main_banner)
+
+                            tv_highlight.text = dataHilight?.articles?.component1()?.title
+                            tv_name_author.text = dataHilight?.articles?.component1()?.author
+                            tv_date_main.text = dataHilight?.articles?.component1()?.publishedAt
                         }else{
                             Toast.makeText(this@MainActivity, "Data Failed !", Toast.LENGTH_SHORT).show()
                         }

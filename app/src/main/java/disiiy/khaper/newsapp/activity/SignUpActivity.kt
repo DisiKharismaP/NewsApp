@@ -17,7 +17,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var mAuth: FirebaseAuth
     private lateinit var refUsers: DatabaseReference
-    private var firebaseUserId : String = ""
+    private var firebaseUserId : String = " "
 
     companion object{
         fun getLaunchService (from: Context) = Intent(from, SignUpActivity::class.java).apply {

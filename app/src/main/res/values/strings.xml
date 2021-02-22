@@ -35,4 +35,18 @@
     <string name="magazine">Magazine</string>
     <string name="business">Business</string>
     <string name="title_items">An illionois town fights to save its power plant</string>
+    <string name="floating_button">floating_button</string>
+    <string name="txt_email_profile">nathania@gmail.com</string>
+    <string name="log_out">Log Out</string>
+    <string name="preferences">Preferences</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="account">Account</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="change_account">Change Account</string>
+    <string name="privacy_and_setting_help">Privacy and Setting Help</string>
+    <string name="setting">Setting</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="language">Language</string>
+    <string name="notifications">Notifications</string>
+    <string name="content_desc">It has emerged that, earlier today, a Sriwijaya Air Boeing 737-500 lost radar contact shortly after departing the Indonesian capital of Jakarta. Sriwijaya Air flight SJ182 was a domestic flight from Jakarta Soekarno–Hatta International Airport (CGK) to Pontianak Supadio International Airport (PNK). It was operated by a 26-year old Boeing 737-500 registered PK-CLC. This aircraft has been with the airline since 2012, having previously flown for US carriers Continental and United.</string>
 </resources>
